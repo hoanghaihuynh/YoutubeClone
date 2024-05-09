@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --light-grey: rgb(247, 247, 247);
+    --border-grey-colour: rgb(204, 204, 204);
+}
+
+.header{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* left header section */
+.left-section{
+    /* width: 100%;  
+    độ dài default của width là 100%
+    */
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    height: 24px;
+    margin: 0 24px 0 24px;
+}
+.youtube-logo{
+    height: 20px;
+}
+
+/*mid header section*/
+.mid-section{
+    /* background-color: lightpink; */
+    flex: 1; /*phụ thuộc vào thằng cha(header)
+    chứ không phải thằng hiện tại*/
+    /* sẽ chiếm hết available space */
+    /* linh hoạt khi phóng to, thu nhỏ */
+    margin: 0 0 0 60px;
+    max-width: 470px;
+    /*Khi kéo ra thả vào, sẽ linh hoạt
+    nhỏ hơn hoặc bằng 300px, nếu lớn
+    hơn 300px, nó sẽ kh giãn thêm và chỉ
+    dừng lại ở 300px*/
+    display: flex;/*dùng để thk input và button đứng cạnh nhau*/
+    align-items: center;
+    /* flex-direction: row;  */
+}
+.searchbar {
+    font-size: 16px;
+    height: 40px;
+    padding: 0 0 0 12px;
+    border: 1px solid var(--border-grey-colour);
+    flex: 1; /*nếu flex: 0, width: 0 thì ô trống còn lại sẽ là available space (thuộc thằng cha mid-section)*/  
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    width: 0; /*width: 0 thì thanh search bar sẽ shrink
+    cho fit với browser*/
+}   
+
+.search-btn{
+    height: 40px;
+    width: 64px;
+    padding: 0 6px 0 6px;
+    border: 1px solid var(--border-grey-colour);
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: var(--light-grey);
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 24px;
+    }
+}
+.voice-search-icon-btn{
+    height: 40px;
+    width: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--light-grey);
+    display: flex;   
+    align-items: center;
+    justify-content: center;    
+    img{
+        height: 24px;
+    }
+}
+/*Right header section*/
+.right-section{
+    width: 182px;
+    margin: 0 24px 0 29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0; /*shrink: 0 thì nó sẽ không co lại khi
+    thu nhỏ browser*/
+}
+.youtube-upload, .youtube-apps, .notifications{
+    height: 24px;
+}
+.my-channel{
+    height: 32px;
+    border-radius: 16px;
+}

@@ -1,0 +1,95 @@
+:root{
+    --fb-color: #4267B2;
+    --messenger-color: #00B2FF;
+    --twitch-color: #6441a5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding-bottom: 500px;
+}
+
+.container{
+    padding-top: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+
+}
+.container{
+    button{
+        color: white;
+        background-color: var(--fb-color);
+        border: none;
+        padding: 3px 8px 3px 8px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+/* Bài 12g */
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 10px;
+    align-items: center;
+  
+}
+.profile-container img{
+    border-radius: 32px;
+    width: 50px;
+    margin-left: 10px;
+}
+.info{
+    flex: 1;
+    font-size: 13px;
+    line-height: 17px;
+    margin-left: 8px;
+    
+}
+.profile-container button{
+    color: white;
+    border: none;
+    background-color: var(--messenger-color);
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+/* Bai 12f */
+.header-container{
+    display: flex;
+    max-width: 100%;
+    margin: 20px 20px 0px 10px;
+    justify-content: space-between;
+    background-color: var(--twitch-color);
+    color: white;
+    padding: 10px 5px 10px 13px;
+    align-items: center;
+}
+.header-container input{
+    padding: 8px 0px 8px 10px;
+    border-radius: 15px;
+    border: none;
+}
+.header-container button{
+    border: 1px solid white;
+    color: white;
+    background-color: var(--twitch-color);
+    border-radius: 2px;
+    padding: 8px;
+}
+
+
+
+
+

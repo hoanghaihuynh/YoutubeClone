@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+}
+.video-preview {
+  /* width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px; */
+}
+.thumbnail {
+  width: 100%;
+}
+/*Grid Video*/
+.video-grid-content{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.video-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.video-channel,
+.video-stats {
+  font-size: 12px;
+  color: gray;
+}
+.channel-picture{
+  /* background-color: lightgray; */
+}
+.channel-picture img{
+  width: 36px;
+  /* img always overflow so you should change its parents first in order to fit him in. */
+  border-radius: 25px;
+}
+.video-info{
+  /* Why not 200px? Cause it will extend the parent div. Dont believe me? Try with 200px you will user-select
+  the parent div(video-preview) is 253px even though i force it 250px */
+  /* background-color: lightgray; */
+}
+@media only screen and (max-width: 1200px ) {
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+  .video-preview {
+    /* width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px; */
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  /*Grid Video*/
+  .video-grid-content{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+  .video-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .video-channel,
+  .video-stats {
+    font-size: 12px;
+    color: gray;
+  }
+  .channel-picture{
+    /* background-color: lightgray; */
+  }
+  .channel-picture img{
+    width: 36px;
+    /* img always overflow so you should change its parents first in order to fit him in. */
+    border-radius: 25px;
+  }
+  .video-info{
+    /* Why not 200px? Cause it will extend the parent div. Dont believe me? Try with 200px you will user-select
+    the parent div(video-preview) is 253px even though i force it 250px */
+    /* background-color: lightgray; */
+  }
+}
+@media only screen and (max-width: 768px){
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;
+  }
+  .video-preview {
+    /* width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px; */
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  /*Grid Video*/
+  .video-grid-content{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+  .video-title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .video-channel,
+  .video-stats {
+    font-size: 12px;
+    color: gray;
+  }
+  .channel-picture{
+    /* background-color: lightgray; */
+  }
+  .channel-picture img{
+    width: 36px;
+    /* img always overflow so you should change its parents first in order to fit him in. */
+    border-radius: 25px;
+  }
+  .video-info{
+    /* Why not 200px? Cause it will extend the parent div. Dont believe me? Try with 200px you will user-select
+    the parent div(video-preview) is 253px even though i force it 250px */
+    /* background-color: lightgray; */
+  }
+}

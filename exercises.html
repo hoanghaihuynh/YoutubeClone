@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises - Challenge Exercises</title>
+  </head>
+  <style>
+    * {
+      font-family: arial;
+      font-size: small;
+    }
+
+    input {
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 6px;
+      border: 1px solid grey;
+    }
+    .firstNameInput,
+    .lastNameInput {
+      width: 70px;
+    }
+    .emailInput {
+      display: block;
+      width: 172px;
+      box-sizing: border-box;
+      margin: 10px 0px;
+    }
+    .signinBtn {
+      width: 172px;
+      border: none;
+      background-color: rgb(126, 126, 241);
+      color: white;
+      padding: 10px 0px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .exercise8 {
+      display: inline-block;
+    }
+    .redbox {
+      display: inline-block;
+      background-color: red;
+      width: 50px;
+      height: 50px;
+    }
+    .greencircle {
+      display: inline-block;
+      background-color: green;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+    }
+    .exercise8c {
+      display: inline-block;
+      outline: 1px solid black;
+    }
+    .yesBtn {
+      margin-left: 10px;
+    }
+    .yesBtn,
+    .noBtn {
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div class="exercise8">
+      <input
+        required
+        class="firstNameInput"
+        type="text"
+        placeholder="First name"
+      />
+      <input class="lastNameInput" type="text" placeholder="Last name" />
+      <input class="emailInput" type="text" placeholder="Email" />
+      <button class="signinBtn">Sign in</button>
+    </div>
+
+    <div class="redbox"></div>
+
+    <div class="greencircle"></div>
+
+    <div class="exercise8c">
+      <p style="padding-left: 10px; padding-right: 10px">
+        Satisfied with our service?
+      </p>
+      <button class="yesBtn">Yes</button>
+      <button class="noBtn">No</button>
+    </div>
+  </body>
+</html>

@@ -99,26 +99,52 @@ body{
     display: flex;
     flex-direction: row;
     margin: 20px 0 0 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 400px;
+    padding: 10px;
 }
 .col-1{
-    border: 1px solid black;
+    /* border: 1px solid lightblue; */
+}
+.col-1 img{
+    height: 40px;
+    border-radius: 20px;
+}
+.col-2{
+    padding: 0 0 0 10px;
 }
 .row-1{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .your-name-hastag{
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+.name{
+    font-weight: bold;
+}
+.hastag{
+    color: gray;
+    padding: 0 0 0 5px;
 }
 .your-description{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 5px 0 10px 0;
 }
 .row-2{
     display: flex;
-    border: 1px solid blue;
+    border: 1px solid lightgray;
+    border-radius: 11px; 
 }
 .grey-bg{
     background-color: lightgray;
+    width: 80px;
+}
+.youtube-link{
+    flex: 1;
+    padding: 10px 0 10px 10px;
+}
+.link{
+    color: gray;
+    padding:0 0 5px 0;
 }

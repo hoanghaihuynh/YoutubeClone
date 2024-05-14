@@ -1,0 +1,46 @@
+body{
+    font-family: Arial;
+}
+.sidebar-avatar{
+    background-color: rgb(33, 33, 33);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 0 0;
+}
+.ava1,.ava2,.ava3{
+    height: 40px;
+    border-radius: 30px;
+    padding: 0 0 0 0;
+}
+.ava2{
+    padding: 10px 0 10px 0;
+}
+.sidebar-info{
+    position: fixed;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 0 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    padding: 10px 10px 0 10px;
+}
+.col-1{
+    line-height: 25px;
+    .row-1{
+        font-size: 14px;
+    }
+    .row-2{
+        font-size: 14px;
+        color: lightgray;
+    }
+}

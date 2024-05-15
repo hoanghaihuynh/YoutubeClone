@@ -5,15 +5,32 @@
   column-gap: 8px;
   row-gap: 16px;
   padding: 20px;
+  /* margin-left: 70px; */
 }
 .video-preview {
-  /* width: 300px;
-  display: inline-block;
+  width: 300px;
+  /* display: inline-block;
   vertical-align: top;
   margin-right: 15px; */
 }
 .thumbnail {
-  width: 100%;
+  width: 100%; 
+  z-index: 0;
+}
+.thumbnail-row{
+  position: relative;
+}
+.video-time{
+  position: absolute;
+  background-color: black;
+  color: white;
+  bottom: 10px;
+  right: 5px;
+  padding: 5px 3px 5px 3px;
+  border-radius: 4px;
+  font-family: roboto;
+  font-size: 13px;
+  font-weight: 500;
 }
 /*Grid Video*/
 .video-grid-content{
@@ -50,6 +67,7 @@
     row-gap: 16px;
   }
   .video-preview {
+    z-index: 0;
     /* width: 300px;
     display: inline-block;
     vertical-align: top;

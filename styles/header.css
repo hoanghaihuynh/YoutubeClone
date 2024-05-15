@@ -2,6 +2,7 @@
 :root{
     --light-grey: rgb(247, 247, 247);
     --border-grey-colour: rgb(228,228,228);
+    --youtube-logo-colour: rgb(204, 0, 0);
 }
 
 .header{
@@ -29,6 +30,8 @@
         cursor: pointer;
     }
     border-bottom: 0.5px solid var(--border-grey-colour);
+    z-index: 1;
+    /*z-index: 1=> ưu tiên header đứng trước video-preview(z-index: 0)*/
 }
 /* left header section */
 .left-section{
@@ -124,4 +127,17 @@
 .my-channel{
     height: 32px;
     border-radius: 16px;
+}
+.notifications-icon-container{
+    position: relative;
+}
+.notifications-quanity{
+    background-color: var(--youtube-logo-colour);
+    color: white;
+    top: -3px;
+    right: -7px;
+    position: absolute;
+    padding: 2px 5px 2px 5px;
+    border-radius: 80px;
+    font-size: 9px;
 }

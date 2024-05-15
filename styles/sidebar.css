@@ -8,6 +8,13 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    top: 55px;
+    top: 55px;  
     width: 72px;
+    z-index: 1;
+    /*Nếu không có z-index: 1, thì
+    thumbnail sẽ đè lên sidebar
+    */
+    img{
+        height: 32px;
+    }
 }

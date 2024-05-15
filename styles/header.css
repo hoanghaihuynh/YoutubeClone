@@ -152,9 +152,23 @@ tooltip sẽ được có xảy ra chỉ khi trỏ vào search-btn
     flex-shrink: 0; /*shrink: 0 thì nó sẽ không co lại khi
     thu nhỏ browser*/
 }
+.youtube-upload-container,
+.youtube-apps-container,
+.notifications-icon-container,
+.my-channel-contaiiner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*Để tooltip nằm giữa phải cho display flex aligncenter justify center 
+    vì youtube-upload-container là thằng cha. sẽ căn giữa tất cả (bao gồm
+    thằng tooltip)*/
+}
 .youtube-upload, .youtube-apps, .notifications{
     height: 24px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .my-channel{
     height: 32px;
@@ -172,5 +186,11 @@ tooltip sẽ được có xảy ra chỉ khi trỏ vào search-btn
     padding: 2px 5px 2px 5px;
     border-radius: 80px;
     font-size: 9px;
+}
+.youtube-upload-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip
+{
+    opacity: 1;
 }
 

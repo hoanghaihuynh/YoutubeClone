@@ -3,18 +3,42 @@
     --border-grey-colour: rgb(228,228,228);
 }
 .sidebar{
-    background-color: var(--border-grey-colour);
-    color: white;
     position: fixed;
     left: 0;
     bottom: 0;
     top: 55px;  
-    width: 72px;
-    z-index: 1;
+    width: 75px;
+    z-index: 2;
     /*Nếu không có z-index: 1, thì
     thumbnail sẽ đè lên sidebar
     */
     img{
         height: 32px;
     }
+    background-color: white;
+}
+.sidebar-link{
+    height: 75px;
+    /* margin-bottom: 1px; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /*
+   1. nếu flex-direction: row thì align-item: center sẽ căn giữa 
+   theo chiều dọc, justify-content: center sẽ căn giữa theo chiều ngang
+   2. Nếu flex-direction: column thì align-item: center sẽ căn giữa 
+   theo chiều ngang, justify-content: center sẽ căn giữa theo chiều dọc
+   */
+   img{
+    height: 24px;
+   }
+   div{
+    margin-top:5px;
+    cursor: pointer;
+   }
+}
+
+.sidebar-link:hover{
+    background-color: var(--border-grey-colour);
 }

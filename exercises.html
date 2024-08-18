@@ -64,6 +64,22 @@
     .noBtn {
       margin-bottom: 10px;
     }
+    .temp-container{
+      width: 200px;
+      display: flex;
+      /* border: 1px solid black; */
+      img{
+        width: 40px;
+        border-radius: 20px;
+      }
+    }
+    .temp-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 0 0 5px;
+    }
+   
   </style>
   <body>
     <div class="exercise8">
@@ -88,6 +104,16 @@
       </p>
       <button class="yesBtn">Yes</button>
       <button class="noBtn">No</button>
+    </div>
+
+    <div class="temp-container">
+      <div>
+        <img src="img/shin.png" alt="">
+      </div>
+      <div class="temp-info">
+        <div style="font-weight: bold;font-size: 14px;">author</div>
+        <div style="font-size: 11px;">15M subscribers</div>
+      </div>
     </div>
   </body>
 </html>

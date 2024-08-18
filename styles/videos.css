@@ -16,6 +16,7 @@
 .thumbnail {
   width: 100%; 
   z-index: 0;
+  cursor: pointer;
 }
 .thumbnail-row{
   position: relative;
@@ -54,8 +55,7 @@
   /* background-color: lightgray; */
 }
 .channel-picture img{
-  width: 36px;
-  /* img always overflow so you should change its parents first in order to fit him in. */
+  width: 80%;
   border-radius: 25px;
 }
 .video-info{
